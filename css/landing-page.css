@@ -1,0 +1,90 @@
+body,
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+.decision{
+    width: 50%;
+    display: inline;    
+}
+#j-decision{
+    text-transform: uppercase;
+}
+.userEnter{
+    margin-top: 50px;
+}
+
+.title{
+    padding: 5%;   
+}
+
+.result{
+    text-transform: uppercase;
+}
+
+
+body,
+h1,
+h2 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.table {
+    width: 75%;
+    display: inline;
+    margin-bottom: 50px;
+}
+
+.intro-header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #f8f8f8;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url(../img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url(../img/background.jpg);
+    background-attachment: fixed;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+   .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+

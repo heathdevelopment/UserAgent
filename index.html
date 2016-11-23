@@ -1,22 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">    
-        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>DevTest: User Agent </title>  
+    <title>User Agent Validator</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
 </head>
+
 <body>
-    <h1>Take a user Agent string </h1>
-    <input placeholder="Enter User Agent String" type="text" class = "inputField" id="uAText">
-    <br>
-    <h1>create a function that reads a user agent string and compares to compatibilty list</h1>
-    <script src="script.js"></script>
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">       
+                        <h1 class="title">User Agent Validator</h1>                        
+                        
+                        <table class="table table-inverse">
+                                      <thead>
+                                        <tr>
+                                          <th>PKID</th>
+                                          <th>Browser Name</th>
+                                          <th>Version Number</th>
+                                          <th>Greater Versions</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Internet Explorer</td>
+                                          <td>9</td>
+                                          <td>False</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Internet Explorer</td>
+                                          <td>10</td>
+                                          <td>False</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Chrome</td>
+                                          <td>26</td>
+                                          <td>True</td>
+                                        </tr>
+                                          <tr>
+                                          <th scope="row">4</th>
+                                          <td>Firefox</td>
+                                          <td>22</td>
+                                          <td>True</td>
+                                        </tr>
+                                      </tbody>
+                            </table>
+                        
+                        
+               
+                    <input type="text" placeholder="Mozilla/5.0 (Windows NT 6.3; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0" id="inputUABlock" class="form-control userEnter">
+                    <span class="help-block">Enter a User Agent, if the field is left empty, your U.A. of your current browser will be tested.</span>
+                    <input class="btn btn-danger" id="btnCheck" type="button" value="Check">               
+                        <h3 class="subMessage">Is your browser Compatible? True or False.</h3>
+                        <hr class="intro-divider">
+                        <div class="decision">
+                            <h1 id="j-decision" class = "decision-text">
+                                TRUE
+                            </h1>
+                            <hr class="intro-divider">
+                            <h2 class="decision-reason" id="j-reason"> Browser is outdated. Please update.</h2>
+                            
+                        </div>
+                        <h2 class="result" id="j-result"> CHROME 54.0</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header --> 
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
